@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="nav-toggle">
+        <nav class="sticky">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -24,48 +24,46 @@
 
     <input type="text" id="myText">
     <button type="button" onclick="nameinput()">Confirm name</button>
-
-    <form name=form1 method=post action=check.php>
-        <table>
-            <tr>
-                <th>Choose your pizza size</th>
-            </tr>
-
-            <tr>
-                <td><input type=radio id="large" name=ckb value=4 onclick='chkcontrol(7)' ;> Large + 4 </td>
-            </tr>
-            <tr>
-                <td><input type=radio name=ckb value=6 onclick='chkcontrol(7)' ;> Extra large + 6 </td>
-            </tr>
-            <tr>
-                <th>Select pizza toppings</th>
-            </tr>
-            <tr>
-                <td><input id="meat" type=checkbox name=ckb value=2 onclick='chkcontrol(7)' ;> minced meat+ 2 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=1 onclick='chkcontrol(0)' ;> Pepperoni + 1 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(1)' ;> Cheese + 2 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=3 onclick='chkcontrol(2)' ;> seashell + 3 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(3)' ;> shrimp + 2 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(4)' ;> tomato + 2 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(5)' ;> kebab + 2 </td>
-            </tr>
-            <tr>
-                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(6)' ;> feta + 2 </td>
-            </tr>
-        </table>
-    </form>
+<form name=form1 method=post action=check.php>
+    <table>
+    <tr>
+        <th>Choose your pizza size</th>
+    </tr>
+    <tr>
+        <td><input type=radio id="large" name=ckb value=4 onclick='chkcontrol(7)'> Large + 4 </td>
+    </tr>
+    <tr>
+        <td><input type=radio name=ckb value=6 onclick='chkcontrol(7)'> Extra large + 6 </td>
+    </tr>
+    <tr>
+        <th>Select pizza toppings</th>
+    </tr>
+    <tr>
+        <td><input id="meat" type=checkbox name=ckb value=2 onclick='chkcontrol(7)'> minced meat+ 2 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=1 onclick='chkcontrol(0)'> Pepperoni + 1 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(1)'> Cheese + 2 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=3 onclick='chkcontrol(2)'> seashell + 3 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(3)'> shrimp + 2 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(4)'> tomato + 2 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(5)'> kebab + 2 </td>
+    </tr>
+    <tr>
+        <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(6)'> feta + 2 </td>
+    </tr>
+    </table>
+</form>
     <br>
 
     <p class="location">At last, select where do you want to eat</p>
