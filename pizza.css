@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: url(seoul.jpeg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+tr, td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+header {
+    background-color: gold;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+#msg {
+    color: white;
+}
+
+#name {
+    color: white;
+}
+
+#eat {
+    color: white;
+}
+
+td {
+    text-align: center;
+    background-color: greenyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th {
+    text-align: center;
+    background-color: darkgoldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.location {
+    background-color: greenyellow;
+}

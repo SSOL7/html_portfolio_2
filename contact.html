@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pizza.css">
 </head>
+
 <body>
-    <nav>
-        <ul class="about-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <header></header>
-    <main>
-        <h1>Main</h1>
-        <button>Fly</button>
-        <section>
-            <div class="grid">
-                <div class="grid-item">1 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">2 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">3 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">4 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">5 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">6 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">7 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">8 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">9 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">10 <img src="seoul.jpg" alt=""></div>
-                <div class="grid-item">11 <img src="seoul.jpg" alt=""></div>
-            </div>
-            
-            <div class="box">
-                <p>Shaho</p>
-            </div>
-            <br>
-            <br>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Ordering pizza from us is simple</h1>
 
-            <div class="lds-facebook"><div></div><div></div><div></div></div>
+    <p>First, enter your name:</p>
 
-            <div class="loadingio-spinner-bars-ni3ms6zkqwr"><div class="ldio-g8gdtwi8ylq">
-                <div></div><div></div><div></div><div></div>
-                </div></div>
-    </main>
+    <input type="text" id="myText">
+    <button type="button" onclick="nameinput()">Confirm name</button>
+
+    <form name=form1 method=post action=check.php>
+        <table>
+            <tr>
+                <th>Choose your pizza size</th>
+            </tr>
+
+            <tr>
+                <td><input type=radio id="large" name=ckb value=4 onclick='chkcontrol(7)' ;> Large + 4 </td>
+            </tr>
+            <tr>
+                <td><input type=radio name=ckb value=6 onclick='chkcontrol(7)' ;> Extra large + 6 </td>
+            </tr>
+            <tr>
+                <th>Select pizza toppings</th>
+            </tr>
+            <tr>
+                <td><input id="meat" type=checkbox name=ckb value=2 onclick='chkcontrol(7)' ;> minced meat+ 2 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=1 onclick='chkcontrol(0)' ;> Pepperoni + 1 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(1)' ;> Cheese + 2 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=3 onclick='chkcontrol(2)' ;> seashell + 3 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(3)' ;> shrimp + 2 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(4)' ;> tomato + 2 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(5)' ;> kebab + 2 </td>
+            </tr>
+            <tr>
+                <td><input type=checkbox name=ckb value=2 onclick='chkcontrol(6)' ;> feta + 2 </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    
+    <p class="location">At last, select where do you want to eat</p>
+
+    <form name="formid">
+        <select name="ddlselect" onchange="selectvalue()">
+            <option value="-">-</option>
+            <option value="eatin">Eat in</option>
+            <option value="takeaway">Take away</option>
+            <option value="gift">Gift delivery</option>
+        </select>
+    </form>
+    <p id="name"></p>
+    <div id=msg></div>
+    <label id="eat"></label>
+    <div id="toppings"></div>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
